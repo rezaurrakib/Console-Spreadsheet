@@ -59,12 +59,13 @@ void printData(int row, int col)
 {
     for(int i = 0; i < row; i++)
     {
+
         for(int j = 0; j < col; j++)
         {
             if(GridInfoAsString[i][j] == "EMPTY")
                 cout << "   ";
             else
-                cout << GridInfoAsString[i][j] << " ";
+                cout << GridInfoAsString[i][j] << "   ";
         }
 
         cout << "\n";
@@ -125,6 +126,7 @@ int validExpressionCalculation(string equation)
             }
 
             int val = strToIntConv(num);
+            //cout << "Val is  : " << val << "\n";
             values.push(val);
         }
 
@@ -147,9 +149,12 @@ int validExpressionCalculation(string equation)
                     //cout << "res is  Ist pos : " << res << "\n";
                     values.push(res);
                 }
+                else
+                    break;
 
             }
             operators.push(equation[i]);
+            //cout << "Operator Top : " << operators.top() << "\n";
 
         }
 
@@ -323,8 +328,8 @@ int expressionEvaluation(string exprsn, int c_i, int c_j)
 
 int main()
 {
-    //freopen("input.txt", "r", stdin); // Read Input from the text file
-    freopen("input1.txt", "r", stdin);
+    freopen("input.txt", "r", stdin); // Read Input from the text file
+    //freopen("input1.txt", "r", stdin);
     //freopen("input2.txt", "r", stdin);
     //freopen("input3.txt", "r", stdin);
 

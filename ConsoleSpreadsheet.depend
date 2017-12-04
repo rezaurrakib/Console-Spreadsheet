@@ -8,3 +8,12 @@
 	<sstream>
 	<cstring>
 
+1512427108 source:d:\github_repository\console-spreadsheet\main.cpp
+	<cstdio>
+	<iostream>
+	<vector>
+	<stack>
+	<utility>
+	<sstream>
+	<cstring>
+
