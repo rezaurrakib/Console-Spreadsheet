@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1512416491 source:d:\code repository\codeblocks projects\consolespreadsheet\main.cpp
+	<cstdio>
+	<iostream>
+	<vector>
+	<stack>
+	<utility>
+	<sstream>
+	<cstring>
+
