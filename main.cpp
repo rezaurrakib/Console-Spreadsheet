@@ -335,7 +335,7 @@ int main()
     vector<string> formulaList;
     vector<pair<int, int> > formulaCoordinate;
 
-    while(getline(cin, str) != 0)
+    while(getline(cin, str))
     {
         istringstream iss(str);
         string token;
